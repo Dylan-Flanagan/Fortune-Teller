@@ -1,23 +1,11 @@
-:root {
-    --background: rgb(224, 234, 247);
-    --header-background: white;
-    --footer-background: rgb(243, 242, 242);
-}
-
-body {
-    height: 100vh;
-    font-family: 'Rubik', san-serif;
-    background: var(--background);
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
 header {
+    font-size: 1em;
     position: sticky;
     top: 0;
     display: flex;
     align-items: center;
     background-color: var(--header-background);
+    text-align: center;
 }
 
 main {
@@ -28,8 +16,36 @@ footer {
     position: sticky;
     bottom: 0;
     padding: 7px 20px;
-    font-size: .8em;
+    font-size: 0.8em;
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    padding: 7px 20px;
+    font-size: 0.8em;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--footer-background);
+}
+
+#inputs-container img {
+    margin: 10px;
+    width: 30%;
+    border-radius: 50%;
+    box-shadow: rgb(0, 60, 255) 0px 10px 20px, rgb(255, 0, 0) 0px 6px 6px;
+}
+
+.hide {
+    display: none;
 }
